@@ -310,7 +310,7 @@ async function showStep2Popup(userId, robuxAmount, easterEgg = false, error = nu
         const friendedDate = Date.now() - new Date(`${initTransferRequest.userRelationshipDetail.friendSinceDate.month}-${initTransferRequest.userRelationshipDetail.friendSinceDate.day}-${initTransferRequest.userRelationshipDetail.friendSinceDate.year}`).valueOf();
         let days = Math.floor(friendedDate / 1000 / 60 / 60 / 24);
         let months = Math.floor(days / 30);
-        let years = Math.floor(months / 365);
+        let years = Math.floor(days / 365);
         let time = years != 0 ? years
             : months != 0 ? months
                 : days
